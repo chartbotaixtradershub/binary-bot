@@ -14,8 +14,8 @@
     ]
   },
   "lint-staged": {
-    "*.js": [
-      "prettier-eslint --write",
+    "*.{js,jsx,json,css,scss,md}": [
+      "prettier --write",
       "git add"
     ]
   },
@@ -76,6 +76,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.2",
+    "sass": "^1.66.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-watch": "^5.0.1",
     "husky": "^2.3.0",
@@ -91,6 +92,7 @@
     "loader-utils": "^1.1.0",
     "notifyjs-browser": "^0.4.2",
     "prettier-eslint-cli": "^4.7.0",
+    "prettier": "^2.8.8",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-data-grid": "^3.0.0",
