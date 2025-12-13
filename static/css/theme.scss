@@ -1,0 +1,73 @@
+/* Theme overrides approximating www.x-dbtraders.site */
+$primary: #0b63a7; /* blue */
+$accent: #00b4ff;
+$dark: #0b1a2b;
+$muted: #6c7a89;
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+
+/* Header */
+#topbar,
+#header {
+  background: linear-gradient(90deg, $dark 0%, darken($dark, 5%) 100%);
+  color: white;
+}
+
+.wrapper .logo-wrapper #binary-logo {
+  background: $primary;
+  width: 160px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* Dashboard cards */
+.dashboard {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.dashboard .card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(11, 26, 43, 0.06);
+  padding: 18px;
+  flex: 1 1 220px;
+}
+.card .title {
+  font-weight: 700;
+  color: $dark;
+  margin-bottom: 8px;
+}
+.card .value {
+  font-size: 24px;
+  color: $primary;
+}
+
+/* Buttons */
+.button {
+  background: $accent;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Sidebar (if present) */
+#sidebar {
+  background: #fff;
+  border-right: 1px solid #e6e9ee;
+  min-height: 100vh;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+}

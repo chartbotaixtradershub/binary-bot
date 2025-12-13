@@ -20,7 +20,11 @@ gulp.task(
   "sass",
   gulp.series("clean-css", () =>
     gulp
-      .src(["static/css/bot.scss", "static/css/index.scss"])
+      .src([
+        "static/css/bot.scss",
+        "static/css/index.scss",
+        "static/css/theme.scss",
+      ])
       .pipe(sourcemaps.init())
       .pipe(sass().on("error", sass.logError))
       .pipe(rev())
